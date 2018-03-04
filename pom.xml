@@ -58,8 +58,8 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>qnap-dev/container-apps</repository>
-                    <tag>${project.version}</tag>
+                    <repository>qnap-docker</repository>
+                    <tag>master</tag>
                     <buildArgs>
                         <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
                     </buildArgs>
@@ -68,6 +68,10 @@
         </plugins>
     </build>
 
-
-
+    <distributionManagement>
+        <repository>
+            <id>qnap-docker</id>
+            <url>http://qnap-dev/container-apps</url>
+        </repository>
+    </distributionManagement>
 </project>
