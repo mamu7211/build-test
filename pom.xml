@@ -58,7 +58,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>qnap-docker</repository>
+                    <repository>${project.artifactId}</repository>
                     <tag>master</tag>
                     <buildArgs>
                         <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
